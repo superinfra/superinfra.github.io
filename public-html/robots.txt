@@ -1,0 +1,5 @@
+# bro is a robot :skull:
+
+User-agent: *
+Disallow: /assets/
+Disallow: /style.css

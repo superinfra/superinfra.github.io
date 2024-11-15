@@ -1,4 +1,5 @@
 # bro is a robot :skull:
+# enjoy this nobel prize worthy literature
 
 User-agent: *
 Disallow: /assets/

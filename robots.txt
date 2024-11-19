@@ -4,6 +4,3 @@
 User-agent: *
 Disallow: /assets/
 Disallow: /style.css
-
-User-agent: Googlebot-Image
-Disallow: /

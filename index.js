@@ -4,10 +4,15 @@ const gameLink = "https://www.roblox.com/games/"
 
 const blockLabsId = 5720928288
 
-function truncate(text, to) {
-    let i = text.indexOf(to)
+function truncate(text, to, max) {
+    let i = Math.min(text.indexOf(to), max)
     if (i >= 0) {
-        return text.substring(0, i)
+        if (i == max) {
+            return text.substring(0, i) + "..."
+        } else {
+            return text.substring(0, i)
+        }
+        
     } else {
         return text
     }
@@ -38,7 +43,7 @@ async function getData(universe) {
         Name: data.name,
         Icon: await getIcon(universe),
         Link: gameLink + data.rootPlaceId,
-        Desc: truncate(data.description, "\n"),
+        Desc: truncate(data.description, "\n", 100),
         LikeRatio: "100%",
         Active: data.playing,
         Visits: data.visits,

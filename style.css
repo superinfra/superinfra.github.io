@@ -24,8 +24,21 @@ td, th{
     border: 1px white solid;
     padding: 5px;
 }
+button{
+    background-color: rgb(213, 86, 213);
+    border: none;
+    padding: 7px;
+    border-radius: 10px;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+}
 
 /* Classes */
+.centered{
+    text-align: center;
+    margin: auto;
+    display: block;
+}
 .header-element{
     display: inline;
     height: 50;

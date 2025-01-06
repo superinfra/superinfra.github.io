@@ -14,7 +14,7 @@ a{
     color: rgb(237, 144, 237);
 }
 a:hover{
-    text-shadow: 1px -1px 0px white;
+    text-decoration: underline;
 }
 table{
     border: 1px white solid;
@@ -57,10 +57,47 @@ button{
     margin-left: 15px;
     font-size: 30px;
 }
+.tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: help;
+}
+.tooltip .tooltip-text {
+    visibility: hidden;
+    width: 200px;
+    background-color: rgb(56, 34, 56);
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%; /* Position above the icon */
+    left: 50%;
+    margin-left: -100px; /* Center the tooltip */
+    margin-bottom: 10px; /* Center the tooltip */
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.tooltip:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}
+.tooltip-icon {
+    font-style: normal; /* Prevent italic text */
+    font-weight: bold;
+    background-color: rgb(56, 34, 56);
+    border-radius: 50%;
+    padding: 5px 10px;
+}
+.header-with-tooltip {
+    display: inline-flex; /* Ensure the header and tooltip are aligned horizontally */
+    margin-right: 6px; /* Add some spacing between the header and the icon */
+}
 .game-box{
     background: rgb(56, 34, 56);
     border-radius: 25px;
     padding: 15px;
+    margin-bottom: 20px;
     padding-bottom: 5px;
     overflow: auto;
 }

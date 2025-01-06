@@ -3,6 +3,7 @@ const iconApi = "https://thumbnails.roproxy.com/v1/games/icons?size=256x256&form
 const gameLink = "https://www.roblox.com/games/"
 
 const blockLabsId = 5720928288
+const dwtcId = 6731183935
 
 function truncate(text, to, max) {
     let i = Math.min(text.indexOf(to), max)
@@ -43,7 +44,7 @@ async function getData(universe) {
         Name: data.name,
         Icon: await getIcon(universe),
         Link: gameLink + data.rootPlaceId,
-        Desc: truncate(data.description, "\n", 100),
+        Desc: truncate(data.description, "\n", 150),
         LikeRatio: "100%",
         Active: data.playing,
         Visits: data.visits,
@@ -62,7 +63,14 @@ async function loadGames() {
     blockLabs[1].textContent = blockLabsData.Name
     blockLabs[2].textContent = blockLabsData.LikeRatio + " • " + blockLabsData.Genre
     blockLabs[3].textContent = blockLabsData.Desc
-    console.log(blockLabsData.Name + " has " + blockLabsData.Visits + " visits, and " + blockLabsData.Active + " people are playing it right now! It was last updated " + blockLabsData.DaysSinceUpdate + " day(s) ago, and the description says: \n\n\"" + blockLabsData.Desc + "\"\n\nIcon link: " + blockLabsData.Icon + "\nGame link: " + blockLabsData.Link)
+
+    let dwtcData = await getData(dwtcId)
+    let dwtcGBox = document.getElementById("dwtc")
+    let dwtc = dwtcGBox.children
+    dwtc[0].src = dwtcData.Icon
+    dwtc[1].textContent = dwtcData.Name
+    dwtc[2].textContent = dwtcData.LikeRatio + " • " + dwtcData.Genre + " • By Likenoobie1"
+    dwtc[3].textContent = dwtcData.Desc
 }
 
 loadGames()

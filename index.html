@@ -6,31 +6,40 @@
     <meta name="description" content="We make the best games on Roblox.">
     <link rel="icon" href="/assets/orbiticon.png">
     <link rel="stylesheet" href="/style.css">
+    <script src="/games.js"></script>
 </head>
 
 <body>
     <!-- Header -->
     <iframe src="/assets/header.html", id="header-iframe", title="Header"></iframe>
     
-    <section>
-        <h1>The best games on Roblox</h1>
-        <p>Orbit Productions is a Roblox development group that makes <b>creative</b> and <b>fun</b> games so we can
-            make your day a little bit better!</p>
-        <!-- This is the most important thing to Orbit, keep it near the top -->
-        <p>We don't just build games so we can make money! Instead, we prioritize making sure that playing an Orbit
-            Productions game is a <b>good time for everyone</b>, not just the rich people.</p>
-            <a href="about/index.html">
-                <h3>Learn more about us</h3>
-            </a>
-    </section>
+    <h1 class="centered-heading title" >The best games on Roblox</h1>
+    <p class="centered">Orbit Productions is a Roblox development group that makes <b>creative</b> and <b>fun</b> games so we can
+        make your day a little bit better!</p>
+    <p class="centered-heading"><b>Here's the best part: there's no P2W involved. Ever.</b></p>
+    <a href="about/index.html">
+        <h3 class="centered">Learn more about us</h3>
+    </a>
+
+    <div id="homepage-gallery">
+        <img src="/assets/homepage-gallery/blocklabsgorillaonblock.png" width="500" style="display: inline-block;">
+        <img src="/assets/homepage-gallery/dwtcchickenrider.png" width="500" style="display: inline-block;">
+    </div>
 
     <section>
-        <h1>Our Games</h1>
-        <h3>Block Labs</h3>
-        <b>Genre: Puzzle</b>
-        <p>A simple puzzle game. Solve puzzles by pushing cubes into their places!</p>
+        <h1 class="centered-heading" style="margin-bottom: 0px;">Featured Game</h1>
         <a href="games/index.html">
-            <h3>View all...</h3>
+            <h2 class="centered-heading">View all...</h2>
+        </a>
+
+        <!-- Featured game goes here -->
+        <a href="/games/dont-wake-the-chicken">
+            <div class="game-box" id="dwtc">
+                <img src="https://i.gifer.com/yH.gif" height="100" width="100" style="float: left; margin-right: 10px; margin-bottom: 10px;">
+                <h3 style="margin: 0px; margin-bottom: 5px;">Loading...</h3>
+                <b>100% • Genre</b>
+                <p style="margin-bottom: 10px; font-size: large;"></p>
+            </div>
         </a>
     </section>
 </body>

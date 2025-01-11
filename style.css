@@ -1,14 +1,28 @@
+/* Animations */
+@keyframes titleAnim {
+    0% {
+        text-shadow: black 5px 5px 3px;
+    }
+    100% {
+        text-shadow: black 7px 7px 0px;
+    }
+}
+
 /* Body */
 body{
     background: linear-gradient(rgb(34, 34, 34), rgb(25, 19, 54));
     background-repeat: no-repeat;
     background-attachment: fixed;
+    font-size: 20px;
     color: rgb(213, 86, 213);
     font-family: 'Trebuchet MS', sans-serif;
     margin: 25px;
 }
 
 /* Elements */
+h1{
+    font-size: 35px;
+}
 a{
     text-decoration: none;
     color: rgb(237, 144, 237);
@@ -35,9 +49,20 @@ button{
 }
 
 /* Classes */
+.title{
+    font-size: 50px;
+    text-shadow: black 5px 5px 3px;
+}
+.title:hover{
+    animation: titleAnim 0.5s ease forwards
+}
 .centered{
     text-align: center;
     margin: auto;
+    display: block;
+}
+.centered-heading{
+    text-align: center;
     display: block;
 }
 .header-element{
@@ -116,4 +141,12 @@ button{
     padding-bottom: 15px;
     border-bottom: 3px white solid;
     margin: 0;
+}
+#homepage-gallery{
+    margin: 30px;
+    padding: 20px;
+    background-color: rgb(56, 34, 56);
+    border-radius: 10px;
+    overflow-x: scroll;
+    white-space: nowrap;
 }

@@ -44,7 +44,7 @@ button{
     padding: 7px;
     border-radius: 10px;
     font-family: 'Trebuchet MS', sans-serif;
-    font-size: 25px;
+    font-size: 40px;
     cursor: pointer;
 }
 
@@ -64,6 +64,9 @@ button{
 .centered-heading{
     text-align: center;
     display: block;
+}
+.inline-block{
+    display: inline-block;
 }
 .header-element{
     display: inline;
@@ -118,6 +121,11 @@ button{
     display: inline-flex; /* Ensure the header and tooltip are aligned horizontally */
     margin-right: 6px; /* Add some spacing between the header and the icon */
 }
+.box{
+    background: rgb(56, 34, 56);
+    border-radius: 25px;
+    padding: 15px;
+}
 .game-box{
     background: rgb(56, 34, 56);
     border-radius: 25px;
@@ -125,6 +133,19 @@ button{
     margin-bottom: 20px;
     padding-bottom: 5px;
     overflow: auto;
+}
+.thumbnail{
+    mask-image: linear-gradient(
+        rgba(255, 255, 255, 1), /* 25% */
+        rgba(255, 255, 255, 0.5), /* 50% */
+        rgba(255, 255, 255, 0.2), /* 75% */
+        rgba(255, 255, 255, 0)  /* 100% */
+    );
+    width: 100%;
+    margin-bottom: 20px;
+}
+.thumbnail-text{
+    position: absolute;
 }
 
 /* IDs */
@@ -149,4 +170,12 @@ button{
     border-radius: 10px;
     overflow-x: scroll;
     white-space: nowrap;
+}
+#play-button{
+    width: 50%;
+    background-color: rgb(20, 218, 20);
+}
+#view-game-button{
+    width: 50%;
+    background-color: rgb(56, 34, 56);
 }

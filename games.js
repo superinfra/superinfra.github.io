@@ -78,4 +78,6 @@ async function loadGames() {
     
 }
 
-loadGames()
+addEventListener("DOMContentLoaded", () => {
+    loadGames()
+})

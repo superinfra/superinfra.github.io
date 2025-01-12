@@ -5,41 +5,40 @@
     <meta name="description" content="Play Block Labs on Roblox!">
     <link rel="icon" href="/assets/orbiticon.png">
     <link rel="stylesheet" href="/style.css">
-    <script src="/games.js"></script>
+    <script src="get.js"></script>
 </head>
 
 <body>
     <!-- Header -->
     <iframe src="/assets/header.html", id="header-iframe", title="Header"></iframe>
     
-    <!--https://i.gifer.com/yH.gif-->
     <div style="display: flex;
     justify-content: center;
     align-items: center;">
         <img src="https://tr.rbxcdn.com/180DAY-aa10f79fcfde08158452a737a64eb1ae/768/432/Image/Webp/noFilter" class="thumbnail">
-        <h1 class="title thumbnail-text">Block Labs</h1>
+        <h1 class="title thumbnail-text" id="title">Loading...</h1>
     </div>
     
     <div style="display: flex; align-items: stretch; gap: 20px;">
         <div class="box inline-block" style="flex: 1;">
-            <h1 class="centered">0</h1>
+            <h1 class="centered" id="active">0</h1>
             <p class="centered">Active</p>
         </div>
         <div class="box inline-block" style="flex: 1;">
-            <h1 class="centered">379</h1>
+            <h1 class="centered" id="visits">0</h1>
             <p class="centered">Visits</p>
         </div>
         <div class="box inline-block" style="flex: 1;">
-            <h1 class="centered" >92%</h1>
+            <h1 class="centered" id="like-ratio">100%</h1>
             <p class="centered">Like ratio</p>
         </div>
         <div class="box inline-block" style="flex: 1;">
-            <h1 class="centered">Puzzle</h1>
+            <h1 class="centered" id="genre">Action</h1>
             <p class="centered">Genre</p>
         </div>
     </div>
 
-    <p>A simple puzzle game. Solve puzzles by pushing cubes into their places! There's only 4 levels right now, so this won't take long to beat. Feel free to speedrun it! Don't worry, I'll add more ;)</p>
+    <p id="desc">&nbsp;<!--A simple puzzle game. Solve puzzles by pushing cubes into their places! There's only 4 levels right now, so this won't take long to beat. Feel free to speedrun it! Don't worry, I'll add more ;)--></p>
 
     <button class="centered" id="play-button">
         <a href="roblox://experiences/start?placeId=16626774129" style="color: black;">

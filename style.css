@@ -31,11 +31,11 @@ a:hover{
     text-decoration: underline;
 }
 table{
-    border: 1px white solid;
+    border: 1px rgb(237, 144, 237) solid;
     border-spacing: 0;
 }
 td, th{
-    border: 1px white solid;
+    border: 1px rgb(237, 144, 237) solid;
     padding: 5px;
 }
 button{

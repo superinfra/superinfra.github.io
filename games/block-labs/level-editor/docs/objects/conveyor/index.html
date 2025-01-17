@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>BL:LE Docs - Orbit Productions!</title>
+    <meta name="description" content="The official documentation for the Block Labs Level Editor.">
+    <link rel="icon" href="/assets/orbiticon.png">
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <h1 id="conveyor">Conveyor</h1>
+    <p>A <strong>conveyor</strong> is an object that pushes any blocks or players on its surface in the specified
+        <code>Direction</code>.</p>
+    <h1 id="usage">Usage</h1>
+    <p>Set the <code>Direction</code> and anything that touches its surface will be moved in that direction! You can
+        change also change the <code>Speed</code>. If you place a block on the first end of a conveyor and buttons on
+        the other end, you can make a <a href="../../tutorials/conveyor-scripting">conveyor script</a>! These are useful for binding multiple actions to one trigger.
+    </p>
+    <h1 id="properties">Properties</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Property</th>
+                <th>Acceptable Values</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Direction</td>
+                <td>Any Vector3</td>
+            </tr>
+            <tr>
+                <td>Speed</td>
+                <td>Any number</td>
+            </tr>
+        </tbody>
+    </table>
+    <blockquote class="box" style="color: limegreen;">
+        <b>IMPORTANT:</b>
+            A Vector3 is a set of 3 comma-separated numbers representing direction, position, and anything related to 3D
+            space. The first number is the X-axis (length), the second is the Y-axis (height), and finally, the Z-axis
+            (depth).
+            <p></p>
+        For example, if you input <code>1, 0, 0</code> and stand on the conveyor, you will be moved horizontally
+            across the conveyor on the X-axis. If you input <code>1, 0, 1</code>, however, you&#39;ll be moved
+            diagonally since the conveyor is now moving you on the X-axis <em>and</em> the Z-axis.
+            <p></p>
+            Check out Roblox's official Vector3 documentation <a
+        href="https://create.roblox.com/docs/en-us/reference/engine/datatypes/Vector3">here!</a>
+    </blockquote>
+
+    <!-- Footer -->
+    <hr>
+    <p><sup>
+            <span>© Orbit Productions 2025 | <a href="/games/block-labs/level-editor/docs/">Return to docs</a> | <a
+                    href="/">Return to Orbit Productions</a></span>
+        </sup></p>
+</body>
+
+</html>

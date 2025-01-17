@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>BL:LE Docs - Orbit Productions!</title>
+    <meta name="description" content="The official documentation for the Block Labs Level Editor.">
+    <link rel="icon" href="/assets/orbiticon.png">
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <h1 id="door-button">Door Button</h1>
+    <p>A <strong>door button</strong> is a type of <strong>button</strong> used to open <a
+            href="../../door">doors</a>. This is the most basic puzzle element, but it can also be used to start a
+        <a href="../../../tutorials/conveyor-scripting">conveyor script</a>!</p>
+    <h1 id="usage">Usage</h1>
+    <p>When pressed by a block, it will open the door specified in the <code>DoorToOpen</code> property. If
+        <code>PlayerActivated</code> is true, then this behavior is triggered by a player instead of a block.</p>
+    <h1 id="properties">Properties</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Property</th>
+                <th>Acceptable Values</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>DoorToOpen</td>
+                <td>Any door</td>
+            </tr>
+            <tr>
+                <td>PlayerActivated</td>
+                <td>True or false</td>
+            </tr>
+        </tbody>
+    </table>
+    <blockquote class="box" style="color: red;">
+        <b>CAUTION:</b>
+            If you change the <code>DoorToOpen</code> property using the viewport (the preview in the middle of the
+            screen), it may error. You should always click on the door you want using the Explorer.
+    </blockquote>
+
+    <!-- Footer -->
+    <hr>
+    <p><sup>
+            <span>© Orbit Productions 2025 | <a href="/games/block-labs/level-editor/docs/">Return to docs</a> | <a
+                    href="/">Return to Orbit Productions</a></span>
+        </sup></p>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>BL:LE Docs - Orbit Productions!</title>
+    <meta name="description" content="The official documentation for the Block Labs Level Editor.">
+    <link rel="icon" href="/assets/orbiticon.png">
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <h1>Teleporter</h1>
+    <p>A <strong>Teleporter</strong> teleports <a href="../block">Blocks</a> from its Start part to its End part. It can
+        also teleport players if you enable <code>AcceptPlayers</code>.</p>
+    <h1 id="usage">Usage</h1>
+    <p>When the teleporter's Start is touched by a block, it teleports to the End. It can also work the other way around if you disable <code>OneWay</code>.</p>
+    <h1 id="properties">Properties</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Property</th>
+                <th>Description</th>
+                <th>Acceptable Values</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>OneWay</td>
+                <td>If true, End can teleport players and blocks to Start.</td>
+                <td>True or false</a></td>
+            </tr>
+            <tr>
+                <td>Instant</td>
+                <td>If false, the teleporting animation won't be played. (Only affects players)</td>
+                <td>True or false</td>
+            </tr>
+            <tr>
+                <td>AcceptPlayers</td>
+                <td>Whether or not players can use the teleporter</td>
+                <td>True or false</td>
+            </tr>
+        </tbody>
+    </table>
+    <h1 id="tips">Tips</h1>
+    <ul>
+        <li>Two way teleporters should only be used on small and/or round parts. Otherwise, the player may not be able
+            to get off in time, causing a teleport loop.</li>
+    </ul>
+
+    <!-- Footer -->
+    <hr>
+    <p><sup>
+            <span>© Orbit Productions 2025 | <a href="/games/block-labs/level-editor/docs/">Return to docs</a> | <a
+                    href="/">Return to Orbit Productions</a></span>
+        </sup></p>
+</body>
+
+</html>

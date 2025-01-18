@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>BL:LE Docs - Orbit Productions!</title>
+    <meta name="description" content="The official documentation for the Block Labs Level Editor.">
+    <link rel="icon" href="/assets/orbiticon.png">
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <h1>Block</h1>
+    <p><strong>Blocks</strong>, the most important objects in the game, are pushable objects used to solve puzzles,
+        press <a href="../buttons">buttons</a>, cross gaps, etc. They are spawned by <a href="../spawner">Block
+            Spawners</a> and destroyed by <a href="../destroyer">Block Destroyers</a>, but they can also be placed
+        directly into a level.
+    </p>
+    <h1 id="usage">Usage</h1>
+    <p>
+        You can keep Blocks into <code>ReplicatedStorage</code>'s <code>Blocks</code> folder to spawn them with <a
+            href="../spawner">Block Spawners</a>, or you can place them in <code>Workspace</code> to spawn them directly
+        into the enviroment.
+    </p>
+    <p>A pack of basic blocks comes with your level kit in the <code>Blocks</code> folder, but you can read <a
+            href="../../tutorials/custom-blocks">Creating Custom Blocks</a> to learn how to make your own shapes and
+        types.</p>
+
+    <h1 id="properties">Properties</h1>
+    <table>
+        <thead>
+            <th>Property</th>
+            <th>Description</th>
+            <th>Acceptable Values</th>
+        </thead>
+        <tbody>
+            <td>IsBox</td>
+            <td>Used internally</td>
+            <td>True</td>
+        </tbody>
+    </table>
+    <blockquote class="box" style="color: red;">
+        <b>CAUTION:</b>
+        The <code>IsBox</code> property is how buttons detect blocks. Do not set it to false or delete it.
+    </blockquote>
+
+    <!-- Footer -->
+    <hr>
+    <p><sup>
+            <span>© Orbit Productions 2025 | <a href="/games/block-labs/level-editor/docs/">Return to docs</a> | <a
+                    href="/">Return to Orbit Productions</a></span>
+        </sup></p>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>BL:LE Docs - Orbit Productions!</title>
+    <meta name="description" content="The official documentation for the Block Labs Level Editor.">
+    <link rel="icon" href="/assets/orbiticon.png">
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <h1>Touch Block Spawner</h1>
+    <i>You may be looking for <a href="../spawner">Block Spawner</a>.</i>
+    <p>A <strong>Touch Block Spawner</strong>, like a normal <a href="../spawner">Block Spawner</a>, spawns blocks when
+        you trigger them. The difference is that Touch Block Spawners need to be touched by the player's avatar instead
+        of being clicked.</p>
+    <h1 id="usage">Usage</h1>
+    <p>When its button is pressed, it will spawn the block specified in the <code>BlockToSpawn</code> property on top of
+        the "Block Spawn" text. It'll also delete any blocks created by spawners with the same <code>SpawnerID</code>,
+        including itself and regular Block Spawners.</p>
+    <h1 id="properties">Properties</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Property</th>
+                <th>Acceptable Values</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>BlockToSpawn</td>
+                <td>The name of any <a href="../block">block</a></td>
+            </tr>
+            <tr>
+                <td>SpawnerID</td>
+                <td>Any text (typically a number)</td>
+            </tr>
+        </tbody>
+    </table>
+    <h1 id="tips">Tips</h1>
+    <ul>
+        <li>Change the SpawnerID property to create multiple blocks at the same time!</li>
+    </ul>
+
+    <!-- Footer -->
+    <hr>
+    <p><sup>
+            <span>© Orbit Productions 2025 | <a href="/games/block-labs/level-editor/docs/">Return to docs</a> | <a
+                    href="/">Return to Orbit Productions</a></span>
+        </sup></p>
+</body>
+
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>BL:LE Docs - Orbit Productions!</title>
+    <meta name="description" content="The official documentation for the Block Labs Level Editor.">
+    <link rel="icon" href="/assets/orbiticon.png">
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <h1>Custom Button</h1>
+    <p><strong>Custom Buttons</strong> are triggered when a block, player, or NPC collides with the button. After
+        they're triggered, the builder-written <a href="../../../tutorials/text-scripting">code</a> inside runs!</p>
+    <blockquote class="box" style="color: red;">
+        <b>CAUTION:</b>
+        For use by <a href="../../../tutorials/becoming-a-trusted-builder">Trusted Builders</a> only. Your level will be
+        automatically rejected if you use this object while not a Trusted Builder.
+    </blockquote>
+    <h1 id="usage">Usage</h1>
+    <p>Expand the button in the Explorer window (<code>View</code> > <code>Explorer</code>) and double-click the
+        <code>Script</code> inside. It should have a section like this:
+    </p>
+    <pre class="box"><code class="lang-lua">if touch:FindFirstChild("IsBox") then
+    print("A block pressed the button!")
+    button.Material = Enum.Material.Neon
+    activated = true
+elseif humanoid and plr then
+    print("A player pressed the button!")
+    button.Material = Enum.Material.Neon
+    activated = true
+elseif humanoid then
+    print("An NPC pressed the button!")
+    button.Material = Enum.Material.Neon
+    activated = true
+end</code></pre>
+    <p></p>
+    <h2 id="block-activation">For block activation:</h2>
+    <p>Go to the <strong>first</strong> indent of the section shown above and enter your code. The variable
+        <code>touch</code> references the block that activated the button.
+    </p>
+    <h2 id="player-activation">For player activation:</h2>
+    <p>Go to the <strong>second</strong> indent of the section shown above and enter your code. The variable
+        <code>plr</code> references the player that activated the button, and <code>humanoid</code> references that
+        player's character's humanoid. <code>touch.Parent</code>, <code>humanoid.Parent</code>, and
+        <code>plr.Character</code> all reference the player's character.
+    </p>
+    <h2 id="npc-activation">For NPC activation:</h2>
+    <p>Go to the <strong>third and final</strong> indent of the section shown above and enter your code. The variable
+        <code>humanoid</code> references the triggering NPC's humanoid.
+        Both <code>touch.Parent</code> and <code>humanoid.Parent</code> reference the actual NPC.
+    </p>
+
+    <blockquote class="box">
+        <b>NOTE:</b>
+        Still need help? Don't worry, this section will be updated later to add more information. For now, try the <a
+            href="#tips">resources at the bottom of this page</a>.
+    </blockquote>
+    <h1 id="properties">Default Properties</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Property</th>
+                <th>Acceptable Values</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>ExampleProperty</td>
+                <td>Any text</td>
+            </tr>
+        </tbody>
+    </table>
+    <h1 id="tips">Tips</h1>
+    <ul>
+        <li>Check out these tutorials and resources to learn how to code:
+            <ul>
+                <li><a href="../../../tutorials/text-scripting/1">Text Scripting I</a></li>
+                <li><a href="../../../tutorials/text-scripting/2">Text Scripting II</a></li>
+                <li><a href="https://create.roblox.com/docs">Roblox Documentation</a></li>
+                <li><a href="https://luau.org">Luau.org</a></li>
+            </ul>
+    </ul>
+
+    <!-- Footer -->
+    <hr>
+    <p><sup>
+            <span>© Orbit Productions 2025 | <a href="/games/block-labs/level-editor/docs/">Return to docs</a> | <a
+                    href="/">Return to Orbit Productions</a></span>
+        </sup></p>
+</body>
+
+</html>

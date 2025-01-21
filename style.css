@@ -8,7 +8,10 @@
     }
 }
 
-/* Body */
+/* Html & Body */
+html{
+    scroll-behavior: smooth;
+}
 body{
     background: linear-gradient(rgb(34, 34, 34), rgb(25, 19, 54));
     background-repeat: no-repeat;
@@ -17,6 +20,7 @@ body{
     color: rgb(213, 86, 213);
     font-family: 'Trebuchet MS', sans-serif;
     margin: 25px;
+    
 }
 
 /* Elements */

@@ -72,6 +72,9 @@ button{
 .inline-block{
     display: inline-block;
 }
+.newlines-allowed{
+    white-space: pre-line;
+}
 .header-element{
     display: inline;
     height: 50;
@@ -147,6 +150,7 @@ button{
     );
     width: 100%;
     margin-bottom: 20px;
+    aspect-ratio: 16/9;
 }
 .thumbnail-text{
     position: absolute;

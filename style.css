@@ -133,13 +133,42 @@ button{
     border-radius: 25px;
     padding: 15px;
 }
-.game-box{
-    background: rgb(56, 34, 56);
+.game-box {
+    position: relative;
+    display: inline-block;
+    background: none;
+    height: 200px;
+    width: 200px;
+    padding: 0;
     border-radius: 25px;
-    padding: 15px;
-    margin-bottom: 20px;
-    padding-bottom: 5px;
-    overflow: auto;
+    overflow: hidden;
+}
+.game-box img {
+    height: 100%;
+    width: 100%;
+}
+.game-box:hover img{
+  mask-image: linear-gradient(
+        rgba(255, 255, 255, 1), /* 25% */
+        rgba(255, 255, 255, 0.5), /* 50% */
+        rgba(255, 255, 255, 0.2), /* 75% */
+        rgba(255, 255, 255, 0.2)  /* 100% */
+   );
+}
+.game-box:hover div{
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+.game-box div h3 {
+    margin: 0;
+    margin-bottom: 5px;
+}
+.game-box div {
+    position: absolute;
+    left: 10%;
+    right: 10%;
+    bottom: 5%;
+    opacity: 0;
 }
 .thumbnail{
     mask-image: linear-gradient(

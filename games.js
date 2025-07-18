@@ -61,9 +61,9 @@ async function loadGames() {
     if (blockLabsGBox) {
         let blockLabs = blockLabsGBox.children
         blockLabs[0].src = blockLabsData.Icon
-        blockLabs[1].textContent = blockLabsData.Name
-        blockLabs[2].textContent = blockLabsData.LikeRatio + " • " + blockLabsData.Genre
-        blockLabs[3].textContent = blockLabsData.Desc
+        //blockLabs[1].textContent = blockLabsData.Name
+        //blockLabs[2].textContent = blockLabsData.LikeRatio + " • " + blockLabsData.Genre
+        //blockLabs[3].textContent = blockLabsData.Desc
     }
 
     let dwtcData = await getData(dwtcId)
@@ -71,9 +71,9 @@ async function loadGames() {
     if (dwtcGBox) {
         let dwtc = dwtcGBox.children
         dwtc[0].src = dwtcData.Icon
-        dwtc[1].textContent = dwtcData.Name
-        dwtc[2].textContent = dwtcData.LikeRatio + " • " + dwtcData.Genre + " • By Likenoobie1"
-        dwtc[3].textContent = dwtcData.Desc
+        //dwtc[1].textContent = dwtcData.Name
+        //dwtc[2].textContent = dwtcData.LikeRatio + " • " + dwtcData.Genre + " • By Likenoobie1"
+        //dwtc[3].textContent = dwtcData.Desc
     }
     
 }

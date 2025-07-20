@@ -72,6 +72,11 @@ button{
 .inline-block{
     display: inline-block;
 }
+.flex {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
 .newlines-allowed{
     white-space: pre-line;
 }

@@ -13,20 +13,23 @@
     <!-- Header -->
     <iframe src="/assets/header.html", id="header-iframe", title="Header"></iframe>
 
-    <form>
-        <label>What are you contacting us for?</label><br>
-        <label>I found a bug</label> <input name="Bug Report" , type="checkbox"><br>
-        <label>I have feedback</label> <input name="Feedback" , type="checkbox"><br>
-        <label>I lost my data</label> <input name="Data Loss" , type="checkbox"><br>
-        <label>Other</label> <input name="Other" , type="checkbox"><br>
-        <input name="Other Field"><br>
-        <br>
-        <label>Which games?</label><br>
-        <label>Block Labs</label> <input name="Block Labs" , type="checkbox"><br>
-        <label>N/A</label> <input name="No Game" , type="checkbox"><br>
-        <br>
-        <label>Type feedback, bug reports, or just say hi :)</label><br>
-        <input name="Main"><br>
+    <h1 class="centered-heading">Contact</h1>
+    <p class="centered">You can contact us for feedback and questions on <a href="https://discord.gg/s3JJu9ypsJ">Discord</a>!</p>
+    <p class="centered">Business inquires</p>
+    <form action="https://formspree.io/f/movljljl" method="POST">
+        <label>
+            Email Address:
+            <input type="email" name="email">
+        </label>
+        <label>
+            Roblox Account (optional):
+            <input type="text" name="roblox">
+        </label>
+        <label>
+            Message:
+            <textarea name="message"></textarea>
+        </label>
+        <button type="submit">Send</button>
     </form>
 </body>
 

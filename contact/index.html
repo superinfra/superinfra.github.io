@@ -13,22 +13,17 @@
     <!-- Header -->
     <iframe src="/assets/header.html", id="header-iframe", title="Header"></iframe>
 
-    <h1 class="centered-heading">Contact</h1>
+    <h1 class="centered-heading">Feedback and Support</h1>
     <p class="centered">You can contact us for feedback and questions on <a href="https://discord.gg/s3JJu9ypsJ">Discord</a>!</p>
-    <p class="centered">Business inquires</p>
-    <form action="https://formspree.io/f/movljljl" method="POST">
-        <label>
-            Email Address:
-            <input type="email" name="email">
-        </label>
-        <label>
-            Roblox Account (optional):
-            <input type="text" name="roblox">
-        </label>
-        <label>
-            Message:
-            <textarea name="message"></textarea>
-        </label>
+    <h1 class="centered-heading">Business Inquires</h1>
+    <p class="centered">Please use the following form.</p>
+    <form action="https://formspree.io/f/movljljl" method="POST" class="centered">
+        <label for="email">Email Address</label>
+        <input type="email" name="email" id="email">
+        <label for="roblox">Roblox Account (optional)</label>
+        <input type="text" name="roblox" id="roblox">
+        <label for="message">Message</label>
+        <textarea name="message" id="message"></textarea>
         <button type="submit">Send</button>
     </form>
 </body>

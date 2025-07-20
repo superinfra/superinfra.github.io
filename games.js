@@ -4,6 +4,7 @@ const gameLink = "https://www.roblox.com/games/"
 
 const blockLabsId = 5720928288
 const dwtcId = 6731183935
+const timelessId = 7248858025
 
 function truncate(text, to, max) {
     let i = Math.min(text.indexOf(to), max)
@@ -75,7 +76,16 @@ async function loadGames() {
         //dwtc[2].textContent = dwtcData.LikeRatio + " • " + dwtcData.Genre + " • By Likenoobie1"
         //dwtc[3].textContent = dwtcData.Desc
     }
-    
+
+    let timelessData = await getData(timelessId)
+    let timelessGBox = document.getElementById("timeless")
+    if (timelessGBox) {
+        let timeless = timelessGBox.children
+        timeless[0].src = timelessData.Icon
+        //timeless[1].textContent = timelessData.Name
+        //timeless[2].textContent = timelessData.LikeRatio + " • " + timelessData.Genre
+        //timeless[3].textContent = timelessData.Desc
+    }    
 }
 
 addEventListener("DOMContentLoaded", () => {

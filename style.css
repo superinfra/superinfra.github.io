@@ -216,7 +216,7 @@ button{
 #about-page-table {
     display: flex;
     justify-content: center;
-    gap: 5px;
+    gap: 15px;
 }
 #play-button{
     width: 50%;

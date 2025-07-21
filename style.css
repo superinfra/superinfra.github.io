@@ -213,6 +213,10 @@ button{
     overflow-x: scroll;
     white-space: nowrap;
 }
+#about-page-table {
+    display: flex;
+    justify-content: space-evenly;
+}
 #play-button{
     width: 50%;
     background-color: rgb(20, 218, 20);

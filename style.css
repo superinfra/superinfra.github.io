@@ -148,6 +148,10 @@ button{
     border-radius: 25px;
     overflow: hidden;
 }
+.featured {
+    height: 400px;
+    width: 400px;
+}
 .game-box img {
     height: 100%;
     width: 100%;

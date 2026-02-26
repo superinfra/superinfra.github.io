@@ -205,12 +205,12 @@ button{
     border-bottom: 3px white solid;
     margin: 0;
 }
-#homepage-gallery{
+.gallery{
     margin: 30px;
     padding: 20px;
     background-color: rgb(56, 34, 56);
     border-radius: 10px;
-    overflow-x: scroll;
+    overflow-x: hidden;
     white-space: nowrap;
 }
 #about-page-table {

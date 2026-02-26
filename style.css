@@ -210,7 +210,7 @@ button{
     padding: 20px;
     background-color: rgb(56, 34, 56);
     border-radius: 10px;
-    overflow-x: hidden;
+    overflow-x: scroll;
     white-space: nowrap;
 }
 #about-page-table {
